@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-ige/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>About Us</title>
+</head>
+<body>
+    <header class="heading">
+        <img class="logo" src="photos/logo.png" alt="logo-club"> 
+        <nav class="nav-bar">
+                <a href="home.html" target="_self">Home</a>
+                <a href="about.html" target="_blank">About</a>
+                <a href="#">Events</a>
+                <a href="#">Projects</a>
+                <a href="#">Blogs</a>
+                <a href="contact.html" target="_blank">Contact Us</a>
+        </nav>    
+    </header>
+    <section id="about_us">
+        <img class="about-wave" src="photos/about-wave.svg" alt="">
+         <div class="look_right">
+             <img src="photos/right.jpeg" alt="">
+         </div>
+         <h1>About Us</h1>
+         <p class="text_first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsum, doloremque quaerat neque.</p>
+         <i class="material-icons arrow" onclick="down()">south</i>
+         <div class="abouting">
+             <div class="photo_about">
+                     <img src="photos/group.jpg" alt="">
+             </div>
+             <div class="text_about">
+                 <h2>WHO WE ARE</h2>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit delectus optio iusto non dicta ipsa illum, reprehenderit, cum quo officia illo amet porro magni incidunt quis eveniet, nihil laborum quaerat!
+                 Ut, deleniti quos. Expedita nostrum, sint reiciendis explicabo placeat maiores ad quos ducimus. Modi recusandae veritatis harum voluptas in necessitatibus voluptates nihil excepturi sapiente, mollitia delectus ad quis? Vero, exercitationem.
+                 Ratione, ex? Nostrum repellendus vitae amet autem. Doloremque itaque, iure perferendis fuga labore error blanditiis eaque ipsam sunt magni corporis, tenetur at quos! Asperiores voluptate natus porro iste enim sit.
+                </p>
+             </div>
+         </div>
+    </section>
+    <section class="footer">
+        <img class="blob" src="photos/blob.svg" alt="">
+        <img class="logo-footer" src="photos/logo.png" alt="">
+        <div class="subfooter">
+           <div>
+               <div class="call-footer">
+                   <i class="material-icons">call</i>
+                   <h5>0123456789</h5>    
+               </div>
+           </div>
+           <div>
+            <div class="mail-footer">
+                <i class="material-icons">mail</i>
+                <h5>igenergy@gmail.com</h5>    
+            </div>
+           </div>
+           <div>
+            <div class="location-footer">
+                <i class="material-icons">location_on</i>
+                <h5>Institut national des télécomunication et des tic Oran</h5>    
+            </div>
+           </div>
+        </div>
+        <hr class="line">
+        <div class="footer-sociaux">
+            <div class="footer-nav">
+                <a href="home.html" target="_self">Home</a>   
+                <a href="about.html" target="_blank">About</a>  
+                <a href="#">Projects</a>  
+                <a href="#">Events</a>  
+                <a href="#">Blogs</a>  
+                <a href="contact.html" target="_blank">Contact Us</a>  
+            </div>
+            <div class="footer-fb">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+            <h5>Copyright @2022 All rights reserved.</h5>
+        </div>
+    </section>
+</body>
+<script>
+    const myAbout = document.querySelector('.abouting');
+    var Who = document.querySelector('.text_about h2');
+    function down() {
+        myAbout.scrollIntoView({
+            behavior:"smooth"
+        })
+         Who.style.borderTopWidth='5px';
+    }
+</script>
+</html>

@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0e2c5b1c;
+}
+.heading{
+    width: 100%;
+    height: 70px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    -webkit-box-shadow: 0px 3px 50px -10px rgba(51,51,51,0.4); 
+    box-shadow: 0px 3px 50px -10px rgba(51,51,51,0.4);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.logo{
+    width: 170px;
+
+}
+.nav-bar{
+    display: flex;
+
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar a{
+list-style: none;
+transition: 0.3s;
+padding: 14px 20px;
+text-decoration: none;
+
+margin: 10px;
+color:#333;
+   
+font-size: 1em; 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+transition: 0.3s;
+}
+
+.nav-bar a:hover{
+    background:#333;
+    border-radius:40px;
+
+    color:white;
+}
+.contact-page{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.contact-page>div{
+    flex: 1;
+    
+}
+.contact{ 
+    position: relative;
+}
+.titleCT{
+    position: absolute;
+    font-weight: lighter;
+    top: 20px;
+    left: 43%;
+    text-align: center;
+    width: 140px;
+    height: 35px;
+     
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: solid 1.7px rgb(39, 95, 199) 
+}
+.CT{
+    width: 55%;
+    height: 70%;
+    position: absolute;
+    top: 85px;
+    left: 50px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 1px rgb(196, 191, 191);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 20px;
+    box-shadow: -6px 8px 20px -2px rgba(51,51,51,0.88);
+}
+.CT h1{
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.name-pro{
+    width: 90%;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-pro h5{
+    margin-left: 25px;
+    font-weight: lighter;
+}
+#name{
+    border: none;
+    width: 170px;
+    height: 28px;
+    border-radius: 8px;
+     padding-left: 10px;
+    outline: none;
+    border: solid 1px rgb(199, 197, 197) ;
+}
+
+#name:focus,#email:focus,#subject:focus,.CT textarea:focus{
+    border: solid 1.5px rgb(39, 95, 199) ;
+    transition: .5s;
+}
+#selection{
+    width: 60px;
+    height: 28px;
+    border: solid 1px rgb(199, 197, 197) ;
+    text-align: center;
+    outline: none;
+   color:black;
+    border-radius: 8px;
+}
+#email,#subject{
+    width: 90%;
+     
+    height: 28px;
+    border-radius: 8px;
+    outline: none;
+    border: solid 1px rgb(199, 197, 197) ;
+    padding-left: 10px;
+}
+.CT textarea{
+    width: 90%;
+    height: 120px;
+    outline: none;
+    border: solid 1px rgb(199, 197, 197) ;
+    font-size: 1.05em;
+    padding: 5px;
+    border-radius: 5px;
+}
+.CT textarea::placeholder{
+    color: black;
+    font-size: 1.1em;
+}
+.CT textarea:focus::placeholder{
+    opacity: 0;
+}
+.send{
+    width: 120px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    text-align: center;
+    background-color: rgb(39, 95, 199) ;
+    cursor: pointer;
+    color: white;
+}
+.send:hover{
+    color: black;
+    transition: .3s;
+}
+.text{
+    position: relative;
+}
+.text-contact{
+    position: absolute;
+    width: 500px;
+    height:500px; 
+     top: 7px;
+    right: 0;
+}
+#svg{
+    position: absolute;
+    bottom: -40px;
+    left: -1px;
+}
+.footer{
+    width: 100%;
+    min-height: 45vh;
+    background-color: #0e2c5bfb;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.blob{
+    position: absolute;
+    width: 200px;
+    top: -10px;
+    left: 34px;
+}
+.logo-footer{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 170px;
+    border-radius: 15px;
+}
+.subfooter{
+    position: absolute;
+    width: 70%;
+    height: 100px;
+    top: 40%;
+    left:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subfooter>div{
+    flex: 1;
+}
+.call-footer{
+    width: 50%;
+    text-align: center;
+    color: rgb(233, 227, 227);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mail-footer{
+    width: 60%;
+    text-align: center;
+    color: rgb(233, 227, 227);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.location-footer{
+    width: 100%;
+    text-align: center;
+    color: rgb(233, 227, 227);
+    display: flex;
+    justify-content: space-evenly;
+}
+.line{
+    position: absolute;
+    width: 90%;
+    bottom: 50px;
+    left: 5%;
+    background-color: rgb(148, 148, 148);
+}
+.footer-sociaux{
+    position: absolute;
+    width: 85%;
+    height: 30px;
+    bottom: 10px;
+    left: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nav{
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: rgb(216, 210, 210);
+}
+.footer-nav a:hover{
+    color: rgb(39, 95, 199) ;
+    transition: 0.3s linear;
+}
+.footer-fb{
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+.footer-fb i{
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+}
+.footer-sociaux h5{
+    color:rgb(216, 210, 210);
+}
+.footer-fb i:nth-child(1):hover{
+    color: blue;
+    transition: 0.3s linear;
+}
+.footer-fb i:nth-child(2):hover{
+    color: red;
+    transition: 0.3s linear;
+}
+.footer-fb i:nth-child(3):hover{
+    color: rgb(223, 62, 188);
+    transition: 0.3s linear;
+} 
+ 
